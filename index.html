@@ -224,9 +224,10 @@ footer strong{color:var(--accent)}
     <button class="cat-chip" onclick="filterCat('ألبان',this)">🥛 ألبان</button>
     <button class="cat-chip" onclick="filterCat('مخبوزات',this)">🍞 مخبوزات</button>
     <button class="cat-chip" onclick="filterCat('مشروبات',this)">🧃 مشروبات</button>
-    <button class="cat-chip" onclick="filterCat('حلويات',this)">🍫 حلويات</button>
+    <button class="cat-chip" onclick="filterCat('حلويات',this)">🍫 حلويات
+      <button class="cat-chip" onclick="filterCat('عروض',this)">🔥 العروض</button>
     <button class="cat-chip" onclick="filterCat('منظفات',this)">🧴 منظفات</button>
-    <button class="cat-chip" onclick="filterCat('أخرى',this)">📦 أخرى</button>
+    <button class="cat-chip" onclick="filterCat('أخرى',this)">📦 أخرىق</button>
   </div>
 </div>
 
@@ -249,8 +250,8 @@ footer strong{color:var(--accent)}
   <div class="modal-box">
     <div class="modal-title">🔐 دخول صاحب المحل</div>
     <div class="modal-sub">أدخل كلمة السر للدخول للوحة الإدارة</div>
-    <div class="modal-field">
-      <input type="password" id="passInput" placeholder="••••••" onkeydown="if(event.key==='Enter')doLogin()">
+    <div class
+      <input type="" id="passInput" placeholder="••••••" onkeydown="if(event.key==='Enter')doLogin()">
     </div>
     <div class="modal-err" id="loginErr">كلمة السر غلط ❌</div>
     <button class="modal-login-btn" onclick="doLogin()">دخول</button>
@@ -337,7 +338,12 @@ const SUPABASE_URL = 'https://ryuiglwcaaowuyccprrv.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_UAJ_WihdlpncUiHJBaf8Hw_x0UzDPql';
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
+<<<<<<< HEAD
+const ADMIN_PASS = 'policy futuer';يات
+
+=======
 const ADMIN_PASS = 'policy futuer';
+>>>>>>> 185e3f41ef9ea303afa5641b16c5334baac3bee1
 const WA_NUMBER = '9647700123456';
 
 let products=[], cart=[], curCat='all', searchQ='', photoFile=null;
